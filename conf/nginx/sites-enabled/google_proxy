@@ -7,7 +7,8 @@ server {
     location / {
         google on;
         google_scholar on;
-        google_language "en";
+        google_language zh-CN;
+        google_robots_allow;
     }
 
     error_page   500 502 503 504  /50x.html;
