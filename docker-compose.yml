@@ -1,0 +1,10 @@
+version: '2.0'
+services:
+  google-proxy:
+    image: mrjin/google-proxy:latest
+    container_name: google-proxy
+    restart: always
+    volumes:
+      - ./conf/nginx/sites-enabled:/etc/nginx/sites-enabled
+    ports:
+      - "80:80"
